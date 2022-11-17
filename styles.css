@@ -1,0 +1,231 @@
+body{
+    display: block;
+    margin: 0;
+    background-color: #eee;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 15.5px;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    background-color: #eee;
+    flex-wrap: wrap;
+}
+
+#header-img{
+    width: 320px;
+    padding: 8px;
+    padding-left: 20px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-right: 15px;
+}
+
+li, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+
+}
+    
+#get_started{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 80px;
+}
+h1{
+    text-align: center;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#email{
+    width: 27%;
+    height: 30px;
+}
+#submit{
+    width: 15%;
+    height: 30px;
+    margin-top: 12px;
+    font-size: 1rem;
+    background-color: orange;
+    border: none;
+    font-weight: bold;
+}
+#content{
+    margin:70px 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+#features{
+    margin: 40px 0;
+}
+.grid{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    width:100%;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 16%;
+    color: rgb(255, 140, 0);
+}
+.descrip{
+   width: 84%;
+   padding-left: 30px;
+}
+h2{
+    margin-bottom: 0;
+}
+p{
+    margin-top: 0;
+}
+#how_it_works{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+#video{
+    width: 550px;
+    height: 310px;
+    border: none;
+}
+#pricing{
+   display:flex;
+   width: 100%;
+   margin: 30px 0;
+   flex-wrap: wrap;
+}
+.trombones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1%;
+    margin: 10px;
+    width: 31%;
+}
+.titles{
+    background-color: rgb(229, 226, 226);
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+}
+h5{
+    font-size: 29px;
+    margin: 10px;
+}
+
+li{
+    text-align: center;
+     margin: 10px;
+}
+.trombones > ul{
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+}
+button{
+    background-color: rgb(255, 200, 0);
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+footer{
+    background-color: rgb(229, 226, 226);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+footer > ul{
+    margin: 0;
+    width:280px;
+}
+span{
+    color: grey;
+}
+@media (min-width: 320px) and (max-width: 440px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1, h2{
+    font-size: 16px;
+}
+  #get_started{
+
+    margin-top: 100px;
+}
+  #submit{
+    width: max-content;
+}
+  #content{
+    margin-top: 40px;
+}
+  .icons{
+    padding-left: 20px;
+}
+}
+@media (min-width:320px) and (max-width:900px){
+#header-img{
+    width: 200px;
+    padding: 8px;
+}
+
+#email {
+    width: 45%;
+}
+#submit{
+    width: 30%;
+    font-size: 12px;
+    width: max-content;
+}
+#get_started{
+    padding-left: 30px;
+    margin-top: 100px;
+}
+.descrip{
+    width: 80%;
+}
+
+#video{
+    width: 90%;
+}
+
+#pricing{
+    justify-content: center;
+}
+.trombones{
+    min-width: 200px;
+}
+
+}
+
+
