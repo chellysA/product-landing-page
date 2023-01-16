@@ -189,7 +189,8 @@ span{
         width: 49%;
      }
      #video{
-        margin: 0 10px;
+        margin: 0 30px;
+        min-width: 200px;
      }
      nav {
     width: 100%;
@@ -223,6 +224,9 @@ span{
    }
    .descrip{
     text-align: center;
+   }
+   .logo{
+    margin: 0 auto;
    }
 
 }
