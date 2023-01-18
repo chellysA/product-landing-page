@@ -4,15 +4,15 @@ body{
     background-color: #eee;
     color: black;
     font-family: 'Lato', sans-serif;
-    font-size: 15.5px;
+    font-size: 15px;
 }
 *{
     box-sizing: border-box;
 }
 header{
     display: flex;
-    margin: 0;
     width: 100vw;
+    padding-left: 20px;
     position: fixed;
     justify-content: space-between;
     top: 0;
@@ -21,16 +21,19 @@ header{
 }
 
 #header-img{
-    width: 320px;
-    padding: 8px;
-    padding-left: 20px;
+    width: 340px;
+    padding: 20px;
+}
+nav{
+    width: 37%;
+    margin-right: 20px;
 }
 ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    padding-right: 15px;
+    padding: 0;
 }
 
 li, a{
@@ -44,7 +47,7 @@ li, a{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 120px;
 }
 h1{
     text-align: center;
@@ -112,6 +115,7 @@ p{
 }
 #pricing{
    display:flex;
+   justify-content: center;
    width: 100%;
    margin: 30px 0;
    flex-wrap: wrap;
@@ -141,7 +145,7 @@ h5{
 
 li{
     text-align: center;
-     margin: 10px;
+     margin: 15px;
 }
 .trombones > ul{
     text-align: center;
@@ -166,41 +170,82 @@ footer{
 }
 footer > ul{
     margin: 0;
-    width:280px;
+    width:215px;
 }
 span{
     color: grey;
 }
-@media (min-width: 320px) and (max-width: 440px){
+@media (max-width: 767px){
     header{
-        flex-direction: column;
         align-items: center;
+        height: auto;
+        padding: 0;
+    }
+    #header-img {
+    width: 210px;
+    padding: 0;
+    padding-top: 16px;
+     }
+     #email{
+        width: 49%;
+     }
+     #video{
+        margin: 0 30px;
+        min-width: 200px;
+     }
+     nav {
+    width: 100%;
     }
     h1, h2{
     font-size: 16px;
-}
-  #get_started{
-
-    margin-top: 100px;
-}
-  #submit{
+    }
+    #submit{
     width: max-content;
-}
-  #content{
+    }
+    #content{
     margin-top: 40px;
-}
-  .icons{
+    }
+    .icons{
     padding-left: 20px;
+    }
+   #pricing{
+   display:flex;
+   width: 100%;
+   margin: 30px 0;
+   flex-wrap: wrap;
+   justify-content: center;
+   }
+   .trombones{
+    width: 90%;
+   }
+   .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .descrip{
+    text-align: center;
+   }
+   .logo{
+    margin: 0 auto;
+   }
+
 }
-}
-@media (min-width:320px) and (max-width:900px){
+
+@media (min-width:768px) and (max-width:1024px) {
 #header-img{
-    width: 200px;
+    max-width: 220px;
     padding: 8px;
 }
-
+.logo{
+    display: flex;
+    align-items: center;
+}
+nav {
+    width: 50%;
+    }
 #email {
-    width: 45%;
+    width: 30%;
 }
 #submit{
     width: 30%;
